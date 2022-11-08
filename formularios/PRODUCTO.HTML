@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Formularios</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <link href="../css/business-casual.min.css" rel="stylesheet">
+<script type="text/javascript" src="js/expresiones_regulares.js"></script>
+  <script type="text/javascript" src="js/validacion_producto.js"></script>
+  <!--inicio calendario-->
+  <link rel="stylesheet" type="text/css" href="calendario/tcal.css">
+  <script type="text/javascript" src="calendario/tcal.js"></script>
+  <!--fin calendario-->
+</head>
+<body>
+     <header>
+    <h1>FUNERARIA VIDA NUEVA</h1>
+  </header>
+    <nav id="principal">Menú principal     
+    <div id="menu">
+      <ul>
+      
+       <li class="nivel1">
+          <a href="Gerente.html" class="nivel1">GERENTE</a>
+        </li>
+        <li class="nivel1">
+          <a href="Datos PERSONALES DEL EMPLEADO.html" class="nivel1">EMPLEADO</a>
+        </li>
+         <li class="nivel1">
+          <a href="FUNCION DEL EMPLEADO.HTML" class="nivel1">AREA DEL EMPLEADO</a>           
+        </li>
+       
+        <li class="nivel1">
+          <a href="Datos PERSONALES DEL CLIENTE.HTML" class="nivel1">CLIENTE</a>           
+        </li>
+        <li class="nivel1">
+          <a href="SERVICIO_CLIENTE.HTML" class="nivel1">SERVICIO_CLIENTE</a>           
+        </li>
+        <li class="nivel1">
+          <a href="PRODUCTO.HTML" class="nivel1">PRODUCTO</a>           
+        </li>
+        <li class="nivel1">
+          <a href="TIPOS DE PRODUCTO.HTML" class="nivel1">TIPOS DE PRODUCTO</a>           
+        </li>
+        
+     </ul>
+     
+        
+      </div>
+    </nav>
+    <br><br>
+    <!--AQUI VA EL CODIGO PARA LOS FORMULARIOS--> 
+    <section id="columna">
+      <header id="subtitulo2">PRODUCTO</header>
+         <form name="formu" action="producto_1.php" method="post" >
+         <table border="100" width=500px" height="500px">
+          <tr>
+            <td>
+              <table border="0">
+ 
+                <tr>
+                  <td><h3>Nombre del Producto:</h3></td><td><input name="nombre" type="text" size="50"  maxlength="15"   onkeyup="this.value=this.value.toUpperCase()" ></td>
+               
+                 
+              <tr>
+                <td align="center" colspan="2">
+                  <input type="hidden" name="formulario" value="Producto">
+                  <input type="button" name="boton" value="ENVIAR" class="boton" onclick="validar()">
+                  <input type="reset" name="cancelar" value="CANCELAR" class="boton">
+                </td>
+              </tr>
+              <tr>
+               <td align="center" class="obligatorio"><h3>DEBES LLENAR TODOS LOS CAMPOS</h3>
+                
+                </td>
+              </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>  
+  </section>  
+</body>
+</html>
